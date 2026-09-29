@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-cream: #F8F4EC;
+  --color-mustard: #EDB13E;
+  --color-mustard-hover: #E2A633;
+  --color-ink: #141414;
+  --color-lavender: #EFF2FB;
+  --color-pale-yellow: #F7E3A8;
+  --color-g-blue: #4C80F0;
+  --color-g-red: #D9503F;
+  --color-g-green: #4FA35A;
+  --color-g-yellow: #EDB13E;
+  --color-editor-bg: #171717;
+  --color-editor-ink: #F7F3EA;
+  --font-mono: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  --font-display: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+}
+
+:root {
+  --bg-cream: #F8F4EC;
+  --mustard: #EDB13E;
+  --ink: #141414;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--ink);
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+/* Neo-brutalist DevFest Nashik borders & hard offset shadows */
+.nb-border {
+  border: 3px solid #141414;
+}
+
+.nb-border-2 {
+  border: 2px solid #141414;
+}
+
+.nb-shadow {
+  box-shadow: 4px 4px 0 #141414;
+}
+
+.nb-shadow-lg {
+  box-shadow: 6px 6px 0 #141414;
+}
+
+.nb-shadow-sm {
+  box-shadow: 2px 2px 0 #141414;
+}
+
+.nb-btn-active:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #141414;
+}
+
+/* Drafting / technical grid background pattern */
+.bg-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(20, 20, 20, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.04) 1px, transparent 1px);
+}
+
+/* Custom sleek technical scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EDB13E;
+}
